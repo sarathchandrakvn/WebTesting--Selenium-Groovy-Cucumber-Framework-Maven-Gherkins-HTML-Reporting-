@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2404680281,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:27"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "As a Registered User I should be able and new subtasks should be appended on bottom",
+        "description": "",
+        "id": "as-a-todo-app-user;as-a-registered-user-i-should-be-able-and-new-subtasks-should-be-appended-on-bottom",
+        "after": [
+          {
+            "result": {
+              "duration": 139260,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:31"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4399063453,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "As a registered user when navigate to the landingPage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "landingPage",
+                  "offset": 42
+                }
+              ],
+              "location": "ToDoPortalSteps.groovy:25"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1500051150,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Sign in Successfully",
+            "match": {
+              "location": "ToDoPortalSteps.groovy:35"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 706850040,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I click MyTasks link on NavBar",
+            "match": {
+              "location": "ToDoPortalSteps.groovy:49"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 760055587,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "create my ownTask",
+            "match": {
+              "location": "ToDoPortalSteps.groovy:105"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1601389005,
+              "error_message": "Assertion failed: \n\nassert getText(By.xpath(\u0027/html/body/div[4]/div/div/div[2]/div[2]/table/tbody/tr[1]/td[2]/a\u0027),driver).trim().contains(one)\n       |          |                                                                          |       |      |        |\n       Subtasktwo By.xpath: /html/body/div[4]/div/div/div[2]/div[2]/table/tbody/tr[1]/td[2]/a|       |      false    SubtaskOne\n                                                                                             |       Subtasktwo\n                                                                                             ChromeDriver: chrome on MAC (8be3b5e33172fe131eb045dbdb4c5741)\n\n\tat com.testAvenue.qa.pages.MyTasksPage.createSubtaksAndVerifyThatTasksAreAppendedBottom(MyTasksPage.groovy:175)\n\tat com.testAvenue.qa.pages.MyTasksPage$createSubtaksAndVerifyThatTasksAreAppendedBottom$0.call(Unknown Source)\n\tat com.testAvenue.qa.steps.ToDoPortalSteps$_run_closure16.doCall(ToDoPortalSteps.groovy:123)\n\tat ✽.Then I should be able to add SubTasks and Verify that new subtasks are appended on bottom(features/subTasks.feature:51)\n",
+              "status": "failed"
+            },
+            "line": 51,
+            "name": "I should be able to add SubTasks and Verify that new subtasks are appended on bottom",
+            "match": {
+              "location": "ToDoPortalSteps.groovy:121"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "Sign out Successfully",
+            "match": {
+              "location": "ToDoPortalSteps.groovy:55"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 45,
+            "name": "@subtask"
+          }
+        ]
+      }
+    ],
+    "name": "As a ToDo App user",
+    "description": "I should be able to create a subtask\nSo I can break down my tasks in smaller pieces",
+    "id": "as-a-todo-app-user",
+    "keyword": "Feature",
+    "uri": "features/subTasks.feature"
+  }
+]
